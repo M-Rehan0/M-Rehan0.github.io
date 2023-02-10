@@ -1,0 +1,309 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**********************************Navigation Bar**********************************/
+nav {    
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 8%;
+    padding-right: 8%;
+    border-bottom: 1.5px solid rgb(225, 225, 225) ;
+    border-top: 3px solid purple;
+    background: rgb(249, 249, 249);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px ;
+}
+
+nav ul li a {
+    float: left;
+    color: grey;
+}
+
+nav li a:link {
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: purple;
+}
+
+/********************************Index Page************************************/
+img {
+    float: left;
+    border-radius: 50%;
+    width: 200px;
+    height: 250px;
+    padding: 5% 10% 5% 10%;
+}
+
+#name {
+    position: absolute;
+    color: rgb(72, 71, 71);
+    top: 72%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#profession {
+    position: absolute;
+    color: rgb(72, 71, 71);
+    top: 74%;
+    left: 5%;
+    text-align: center;
+}
+
+#email {
+    font-size: 12px;
+    position: absolute;
+    top: 78%;
+    left: 5%;
+    text-align: center;
+}
+
+#email a {
+    text-decoration: none;
+}
+
+.body {
+    padding-top: 5%;
+    padding-left: 40%;
+    padding-right: 5%;
+}
+
+#title {
+    padding-bottom: 5%;
+    color: rgb(72, 71, 71);
+}
+
+form {
+    padding-left: 40%;
+}
+
+
+/********************************Footer************************************/
+footer {
+    position: fixed;
+    text-align: center;
+    font-size: 12px;
+    bottom: 0;
+    padding-top: 17px;
+    color: rgb(72, 71, 71);
+    width: 100%;
+    height: 5%;  
+    border-top: 1.5px solid rgb(225, 225, 225) ;
+}
+
+/********************************Skill's progress************************************/
+
+progress {
+    width: 70%;
+}
+
+#skills_progress {
+    list-style-type: none;
+}
+
+/********************************Interests page************************************/
+#interests_list li{
+    list-style-type: square;
+    padding-top: 3%;
+}
+
+/********************************Education & Experience page************************************/
+#info {
+    padding-left: 40%;
+    padding-top: 3%;
+    color: rgb(72, 71, 71);
+    opacity: 0.7;
+}
+
+#info a {
+    color: purple;
+    text-decoration: none;
+}
+
+.date {
+    padding-left: 100px;
+    text-align: right;
+    color:  rgb(65, 64, 64);
+}
+
+.location {
+    font-size: 14px;
+    color: rgb(72, 71, 71);
+    text-align: right;
+    padding-bottom: 30px;
+}
+
+.organiztion {
+    font-size: 14px;
+    color: rgb(72, 71, 71);
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.degree_job {
+    font-size: 20px;
+    color:  rgb(65, 64, 64);
+}
+
+/********************************Media query************************************/
+
+/*For mobiles*/
+@media screen and (max-width: 600px) {
+
+    nav {    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        padding: none ;
+    }
+
+    img {
+        float: inherit;
+        border-radius: 50%;
+        width: 160px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #name {
+        float: inherit;
+        top: 53%;
+        left: 22%;
+        font-size: 18px;
+    }
+    
+    #profession {
+        top: 55%;
+        left: 35%;
+        font-size: 15px;
+    }
+    
+    #email {
+        top: 58%;
+        left: 31%;
+        font-size: 10px;
+    }
+
+    .body {
+        padding-top: 55%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 8%;
+        text-align: center;
+    }        
+
+    #title {
+        padding-top: 0;
+        padding-bottom: 5%;
+        font-size: 22px;
+        text-align: center;    
+    }
+    
+    footer {
+        position: static;
+        text-align: center;
+        background-color: white;
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+    
+    form {
+        padding-left: 10%;
+        padding-bottom: 10%;
+    }
+
+    #info {
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 8%;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #interests_list li{
+        list-style-type: square;
+        padding-top: 3%;
+        padding-right: 2%;
+    }
+}
+
+/*For tablets*/
+@media screen and (max-width: 900px) and (min-width: 600px) {
+
+    nav {    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: none;
+        padding-right: none;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        padding: none ;
+    }
+    
+    img {
+        float: left;
+        border-radius: 50%;
+        width: 150px;
+        height: 200px;
+        padding: 5% 10% 5% 10%;
+    }
+    
+    #name {
+        top: 55%;
+        left: 5%;
+        font-size: 18px;
+    }
+    
+    #profession {
+        top: 57%;
+        left: 5%;
+        font-size: 15px;
+    }
+    
+    #email {
+        top: 60%;
+        left: 5%;        
+        font-size: 10px;
+    }
+    
+    .body {
+        padding-top: 5%;
+        padding-left: 55%;
+        padding-right: 2%;
+    }        
+    
+    form {
+        padding-left: 55%;
+    }
+
+    #info {
+        padding-left: 55%;
+        padding-top: 3%;
+    }
+}
